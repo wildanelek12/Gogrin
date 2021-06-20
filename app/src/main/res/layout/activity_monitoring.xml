@@ -4,6 +4,408 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MonitoringActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top" />
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alat 1"
+        android:textColor="#27846E"
+        android:fontFamily="@font/bold_product"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/monitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitoring Fermentasi"
+        android:textColor="#2d2d2d"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:id="@+id/imagemid"
+        app:cardBackgroundColor="#F6F6F6"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monitoring">
+
+        <LinearLayout
+            android:id="@+id/uhuy"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/abu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2d2d2d"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:textSize="@dimen/_14ssp"
+                android:text="Penggilingan dalam proses"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/poweron"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/abu2"
+        app:cardCornerRadius="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/powerauto"
+        app:layout_constraintStart_toStartOf="@+id/imagemid"
+        app:layout_constraintTop_toBottomOf="@+id/imagemid">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Power"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/_14ssp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_on_btn"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/powerauto"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/abu2"
+        app:cardCornerRadius="@dimen/_14sdp"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/imagemid"
+        app:layout_constraintTop_toTopOf="@+id/poweron">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Auto On/Off"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/_14ssp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_on_btn"
+            android:layout_marginLeft="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/suhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="@dimen/_14sdp"
+
+        app:layout_constraintEnd_toEndOf="@+id/imagemid"
+        app:layout_constraintStart_toStartOf="@+id/imagemid"
+        app:layout_constraintTop_toBottomOf="@+id/poweron">
+
+        <LinearLayout
+            android:id="@+id/suhuu"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/suhu"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:text="Suhu"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:text="89"
+                android:textColor="#D42021"
+                android:textSize="@dimen/_18ssp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:text="C"
+                android:textColor="#D42021"
+                android:textSize="@dimen/_18ssp" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kelembapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="@dimen/_14sdp"
+
+        app:layout_constraintEnd_toEndOf="@+id/suhu"
+        app:layout_constraintStart_toStartOf="@+id/suhu"
+        app:layout_constraintTop_toBottomOf="@+id/suhu">
+
+        <LinearLayout
+            android:id="@+id/kelembapann"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:src="@drawable/kelembapan" />
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="kelembapan"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="73"
+                android:textColor="#168CD7"
+                android:textSize="@dimen/_18ssp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="%"
+                android:textColor="#168CD7"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="@dimen/_14sdp"
+
+        app:layout_constraintEnd_toEndOf="@+id/kelembapan"
+        app:layout_constraintStart_toStartOf="@+id/kelembapan"
+        app:layout_constraintTop_toBottomOf="@+id/kelembapan">
+
+        <LinearLayout
+            android:id="@+id/phh"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:src="@drawable/ph" />
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="pH"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="6"
+                android:textColor="#F6970E"
+                android:textSize="@dimen/_18ssp" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kadarnpk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="@dimen/_14sdp"
+
+        app:layout_constraintEnd_toEndOf="@+id/ph"
+        app:layout_constraintStart_toStartOf="@+id/ph"
+        app:layout_constraintTop_toBottomOf="@+id/ph">
+
+        <LinearLayout
+            android:id="@+id/kadarnpkk"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Kadar NPK"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/_14ssp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/next" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/btn_timer"
+        app:layout_constraintEnd_toEndOf="@+id/kadarnpk"
+        app:layout_constraintStart_toStartOf="@+id/kadarnpk"
+        app:layout_constraintTop_toBottomOf="@+id/kadarnpk" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_rekomendasi"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
