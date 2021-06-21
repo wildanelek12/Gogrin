@@ -17,14 +17,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imagemid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_mid_alat"
+        android:layout_marginTop="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:weightSum="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemid"
         tools:layout_editor_absoluteX="13dp">
 
         <androidx.cardview.widget.CardView
@@ -32,49 +42,36 @@
             android:layout_height="@dimen/_150sdp"
             android:layout_margin="@dimen/_10sdp"
             android:layout_weight="1"
-            app:cardBackgroundColor="#FEFBF1"
-            app:cardCornerRadius="@dimen/_10sdp">
-
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_weight="1"
-            app:cardBackgroundColor="#FEFBF1"
-            app:cardCornerRadius="@dimen/_10sdp">
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:weightSum="2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="13dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_weight="1"
-            app:cardBackgroundColor="#FEFBF1"
-            app:cardCornerRadius="@dimen/_10sdp">
+            app:cardBackgroundColor="#F6F6F6"
+            app:cardCornerRadius="@dimen/_14sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:padding="@dimen/_10sdp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/img_on"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Power On"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="#2D2D2D"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="mengaktifkan alat secara otomatis"
-                    android:textColor="#ABABAB"/>
+                    android:textColor="#6D6D6D"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:src="@drawable/testsek"/>
 
             </LinearLayout>
 
@@ -85,8 +82,129 @@
             android:layout_height="@dimen/_150sdp"
             android:layout_margin="@dimen/_10sdp"
             android:layout_weight="1"
-            app:cardBackgroundColor="#FEFBF1"
-            app:cardCornerRadius="@dimen/_10sdp">
+            app:cardBackgroundColor="#F6F6F6"
+            app:cardCornerRadius="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/img_on"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Power On"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="#2D2D2D"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mengaktifkan alat secara otomatis"
+                    android:textColor="#6D6D6D"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:src="@drawable/testsek"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="13dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#F6F6F6"
+            app:cardCornerRadius="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/img_on"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Power On"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="#2D2D2D"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mengaktifkan alat secara otomatis"
+                    android:textColor="#6D6D6D"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:src="@drawable/testsek"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#F6F6F6"
+            app:cardCornerRadius="@dimen/_14sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/img_on"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Power On"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="#2D2D2D"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mengaktifkan alat secara otomatis"
+                    android:textColor="#6D6D6D"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:src="@drawable/testsek"/>
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
