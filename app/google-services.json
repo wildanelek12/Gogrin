@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "890688892028",
+    "firebase_url": "https://gogrin-6fa0a-default-rtdb.firebaseio.com",
+    "project_id": "gogrin-6fa0a",
+    "storage_bucket": "gogrin-6fa0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890688892028:android:e270fa5fc9b5f99abc2df9",
+        "android_client_info": {
+          "package_name": "com.codesid.gogrin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890688892028-7ass9vgrff5jhmhi26rarrq80t5o5qcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJdaE53ot3r9KNqRPguF-g3ET6h8QjBE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890688892028-7ass9vgrff5jhmhi26rarrq80t5o5qcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
